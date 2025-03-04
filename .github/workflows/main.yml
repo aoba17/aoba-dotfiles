@@ -13,4 +13,5 @@ jobs:
       - name: load .zshrc
         run: source ~/.zshrc
       - name: test eza command
+        shell: zsh
         run: la
