@@ -11,6 +11,7 @@ jobs:
       - name: install
         run: bash install.sh
       - name: load .zshrc
+        shell: zsh {0}
         run: source ~/.zshrc
       - name: test eza command
         shell: zsh {0}
