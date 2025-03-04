@@ -27,3 +27,9 @@ ln -s /absolute/path/to/dotfiles/.zshrc ~/.zshrc
 ```
 ls -la ~
 ```
+
+### update Brewfile
+
+```
+bbdf
+```
