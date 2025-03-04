@@ -8,5 +8,9 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
-      - name: install dotfiles
+      - name: install
         run: bash install.sh
+      - name: load .zshrc
+        run: source ~/.zshrc
+      - name: test eza command
+        run: la

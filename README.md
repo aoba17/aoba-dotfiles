@@ -1,20 +1,18 @@
 # aoba-dotfile
 
-## シンボリックリンクの登録
+## install
 
-### シンボリックリンクの追加
+```
+bash install.sh
+```
 
-#### 一つのファイルを追加する場合
+## development
+
+### シンボリックリンクの登録
 
 ```
 cd path/to/aoba-dotfiles
 ln -s /absolute/path/to/dotfiles/.zshrc ~/.zshrc
-```
-
-#### 一括で追加する場合(新しいマシンにデプロイする時)
-
-```
-./install.sh
 ```
 
 ### リンクを確認
