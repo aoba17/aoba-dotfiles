@@ -13,16 +13,16 @@ This script installs the following:
 1. Homebrew packages
 1. dotfiles
 
-## development
+## maintenance
 
-### シンボリックリンクの登録
+### add new symbolic link
 
 ```
 cd path/to/aoba-dotfiles
 ln -s /absolute/path/to/dotfiles/.zshrc ~/.zshrc
 ```
 
-### リンクを確認
+### check symbolic links
 
 ```
 ls -la ~
