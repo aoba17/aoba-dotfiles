@@ -1,5 +1,6 @@
 # alias
 alias sz='source ~/.zshrc'
+alias cdd='cd ~/development'
 alias cdg='cd $(git rev-parse --show-toplevel)'
 alias ls='eza'
 alias ll='eza -l'
