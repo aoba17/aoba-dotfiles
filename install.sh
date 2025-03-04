@@ -1,5 +1,13 @@
 #!/bin/bash -e
 
+echo "Install Xcode Command Line Tools."
+if ! command -v xcode-select &>/dev/null; then
+    xcode-select --install
+    echo "Success install Xcode Command Line Tools."
+else
+    echo "Xcode Command Line Tools already installed."
+fi
+
 echo "Install Homebrew."
 if ! command -v brew &>/dev/null; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
