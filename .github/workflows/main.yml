@@ -17,3 +17,5 @@ jobs:
         run: |
           source ~/.zshrc
           la
+      - name: print warp keybindings
+        run: cat ~/.warp/keybindings.yaml
