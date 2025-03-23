@@ -36,8 +36,10 @@ echo "Success"
 echo "Create warp links"
 if [ ! -d ~/.warp ]; then
     mkdir ~/.warp
-    cp -r ./warp/* ~/.warp
-    echo "Success create .warp directory."
+    for warpfile in .warp/*; do
+        ln -snfv "$(pwd)/$warpfile" "$HOME/$warpfile"
+    done
+    echo "Success"
 else
     echo ".warp directory already exists."
 fi
